@@ -144,11 +144,11 @@ class App extends Component {
       });
     }
 
-    updateQuantity(id, qty) {
+    updateQuantity(id, qty) { 
       const cart = this.state.cart;
       const product = cart.filter(c => c.id === id);
       if (product.length) {
-        product.quantity = qty;
+        product[0].quantity = qty;
         this.setState({
           cart
         });
@@ -175,7 +175,6 @@ class App extends Component {
         <div>
           <div className="container">
             <Header
-              cartBounce={this.state.cartBounce}
               total={this.state.totalAmount}
               totalItems={this.state.totalItems}
               cartItems={this.state.cart}

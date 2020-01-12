@@ -10,7 +10,7 @@ class Product extends Component {
       isAdded: false
     };
   }
-  addToCart(image, name, discount, price, id, quantity) {
+  addToCart(image, name,  price, discount, id, quantity) {
     this.setState(
       {
         selectedProduct: {

@@ -76,6 +76,7 @@ class Counter extends Component {
 
 Counter.propTypes = {
   value: PropTypes.number
+  
 };
 
 export default Counter;
